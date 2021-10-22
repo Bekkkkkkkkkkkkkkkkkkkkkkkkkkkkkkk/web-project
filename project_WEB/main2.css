@@ -1,0 +1,254 @@
+body{
+  background-color: black;
+}
+
+.grid{
+	display: grid;
+	grid-template-rows: 5px;
+}
+.header{
+	width: 100%;
+	margin: 0 auto ;
+	/*background-color: #111111;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);*/
+	height: 80px;
+  
+}
+.header ul{
+		
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+
+.wrapper{
+	color: black;
+	width: 200px;
+	height: 200px;
+}
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  position: relative;
+  
+}
+.menu-main {
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+  text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+   font-style: italic;
+   font-size: 100px;
+   color: #ffffff;
+   
+
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+  
+}
+.menu-main a:hover {
+  color: black;
+  background: rgba(255,255,255,.9);
+}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+
+}.main-wrapper{
+  margin-top: 200px;
+  margin-left: 320px;
+  background-color:lightblue ;
+  height: 250px;
+  width: 700px;
+  box-shadow: 0px 2px 11px 12px rgba(255, 0, 0, 0.5);
+  opacity: .8;
+
+}
+.btn-swipe {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-left: 200px;
+}
+.btn-swipe:hover, .btn-swipe:focus {
+  color: #fff;
+  outline: 0;
+}
+.btn-swipe:hover {
+  box-shadow: 0 0 40px 40px #e74c3c inset;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+ .main-wrapper p{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: normal;
+  color: black;
+  text-shadow: 0 0 1px red, 5px 5px 1px white, -5px -2px 1px blueviolet;
+  animation: glitch 1s ease-in-out infinite alternate;
+}
+@keyframes glitch {
+  0%,40%,44%,58%,61%,65%,69%,73%,100% {transform:skewX(0deg);}
+  43% {transform: skewX(10deg);}
+}   
+
+
+
+
+
+
+
+
+
+.sale-wrap {
+  position: absolute;
+  width: 400px;
+  height: 285px;
+  padding: 30px 40px;
+  right: 100px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.sale-wrap:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 760px;
+  height: 760px;
+  background: black;
+  border-radius: 50%;
+}
+.sale-inner {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(45deg, black, black);
+  box-shadow: 0 10px 45px rgba(240,96,96, 0.3), 0 -10px 45px rgba(240,96,96, 0.3);
+}
+.sale-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-bottom-right-radius: 150px;
+  box-shadow: 3px 3px 20px rgba(0,0,0,.06);
+}
+.sale-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  padding: 40px 10px 0 40px;
+  box-sizing: border-box;
+}
+.sale-text h2 {
+  margin: 0 0 5px;
+  color: #888888;
+  font-family: 'Comfortaa', cursive;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.sale-text p {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: blueviolet;
+}
+.sale-text p span {
+  font-size: 20px;
+  ont-weight: normal;
+}
+.button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: blueviolet;
+  font-family: 'Comfortaa', cursive;
+  text-transform: lowercase;
+  font-size: 12px;
+  border: 1px solid blueviolet;
+}
+.sale-text .sale-text-info {
+  color: #888888;
+  font-family: 'Comfortaa', cursive;
+  font-size: 10px;
+  font-weight: normal;
+}

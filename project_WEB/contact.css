@@ -1,0 +1,255 @@
+
+body{
+background: linear-gradient(45deg, #30cfd0, #330867);
+}
+.grid{
+  display: grid;
+  grid-template-rows: 750px;
+ }
+
+.header{
+  width: 100%;
+  margin: 0 auto ;
+  background-color: ;
+  height: 80px;
+  opacity: ;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 350px 800px 350px;
+  grid-column-gap: 0px;
+}
+.wrapper1{
+  display: grid;
+  grid-template-columns:400px 400px ;
+  grid-column-gap: 0px;
+}
+.textBlock{
+  width: 800px;
+  height: 600px;
+  margin-top: 80px;
+
+  
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.textBlock h1{
+  text-align: center;
+  font-family: 'Baloo Chettan 2', cursive;
+  color: white;
+  font-size: 100px;
+
+}
+.leftSide{
+ 
+  
+  width: 400px;
+  height: 150px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Baloo Chettan 2', cursive;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.leftSide:hover{
+  box-shadow: inset 2px 2px 25px rgba(8, 8, 255, 1), 1px 1px 5px rgba(8, 8, 255, 1);
+  transition: .4s;
+  color: white;
+}
+.leftSide1{
+  width: 400px;
+  height: 150px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Baloo Chettan 2', cursive;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.leftSide1:hover{
+  box-shadow: inset 2px 2px 25px rgba(243, 8, 255, 1), 1px 1px 5px rgba(243, 8, 255, 1);
+  transition: .4s;
+  color: white;
+}
+.rightSide{
+
+   width: 400px;
+  height: 150px;
+  
+  text-align: center;
+  font-size: 50px;
+  text-decoration: none;
+  list-style: none;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.rightSide:hover{
+  box-shadow: inset 2px 2px 25px rgba(255, 8, 8, 1), 1px 1px 5px rgba(255, 8, 8, 1);
+  transition: .4s;
+}
+.rightSide1{
+
+   width: 400px;
+  height: 150px;
+  
+  text-align: center;
+  font-size: 50px;
+  text-decoration: none;
+  list-style: none;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.rightSide1:hover{
+  box-shadow: inset 2px 2px 25px rgba(8, 255, 16, 1), 1px 1px 5px rgba(8, 255, 16, 1);
+  transition: .4s ;
+}
+.rightSide p{
+  margin-top: 35px;
+}
+.rightSide a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+.rightSide1 a:hover{
+  font-size: 58px;
+  transition: .3s;
+  color: rgba(8, 255, 16, 1);
+}
+.rightSide1 a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+.rightSide1 p{
+  margin-top: 35px;
+}
+
+
+
+.header ul{
+    
+  color: white;
+  text-decoration: none;
+  list-style: none;
+} 
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  position: relative;
+  background:0;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 100px;
+  color: #ffffff;
+}
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-item {float: left;}
+.right-item {float: right;}
+
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: black;
+  transition: .3s linear;
+}
+
+.menu-main a:hover {
+  color: white;
+  
+}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+.social-icons {
+  text-align: center;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:45px;
+  height:45px;
+  margin-right:15px ;
+}
+.social-icons li img:hover {
+  padding: 5px;
+  background: rgba(255, 8, 8, 1);
+  border-radius: 15px;
+  transition: .2s;
+}
+.x{
+background-color: blueviolet;
+border-radius: 500px;
+padding: 5px;
+margin-left: 50px;
+margin-top: 70px;
+}
+.tr{
+background-color: red;
+border-radius: 500px;
+padding: 5px;
+margin-top: 100px;
+margin-left: 50px;
+}
+.o{
+background-color: green;
+border-radius: 500px;
+padding: 5px;
+margin-left: 40px;
+margin-top: 70px; 
+}
+.p{
+background-color: blue;
+border-radius: 500px;
+padding: 5px;
+margin-left:0px;
+margin-top: 100px;
+margin-left: 40px;
+}
